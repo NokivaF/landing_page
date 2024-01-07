@@ -1,20 +1,29 @@
 ---
-
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>AletheQ</title>
-	</head>
-	<body>
-		<a href="/about">About</a>
-		<h1>
-			A New Generation for Journalism: How to become an Agent of Truth in XXI
-			Century
-		</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>AletheIQ</title>
+  </head>
+  <body>
+    <Header />
+    <h1>A New Generation of Self-Acceptance</h1>
+    <h4>Becoming an Agent of Truth in The Havoc of AI and Broke-Chain</h4>
+    <h3></h3>
+
+    <Footer />
+    <script>
+      document.querySelector(".hamburger").addEventListener("click", () => {
+        document.querySelector(".nav-links").classList.toggle("expanded");
+      });
+    </script>
+  </body>
 </html>

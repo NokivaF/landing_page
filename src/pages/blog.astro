@@ -1,5 +1,8 @@
 ---
-
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <html lang="en">
@@ -11,9 +14,21 @@
     <title>Blog</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
+    <Header />
 
-    <h1>Nothing here, just checking 😄</h1>
+    <h1>Here there is a piece of.. mine?</h1>
+    <p>
+      A little space where some thoughts have gone missing to their owners.
+      Maybe you like them 😁
+    </p>
+    <ul>
+      <li><a href="/posts/post-1.md">On my un-coding journey</a></li>
+      <li><a href="/posts/post-2.md">The time of the unknown ones</a></li>
+      <li>
+        <a href="/posts/post-3.md">How is the world doing with technology?</a>
+      </li>
+    </ul>
+
+    <Footer />
   </body>
 </html>

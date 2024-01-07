@@ -1,5 +1,11 @@
 ---
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Navigation from "../components/Navigation.astro";
 
+const pageTitle = "About AletheIQ";
+const navyColor = "navy";
 ---
 
 <html lang="en">
@@ -8,30 +14,55 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>About</title>
+    <title>{pageTitle}</title>
+    <style define:vars={{ navyColor }}>
+      h1 {
+        color: var(--navyColor);
+        font-size: 4rem;
+      }
+    </style>
   </head>
   <body>
-    <a href="/">Home</a>
+    <Header />
 
     <h1>More on this exciting task...</h1>
-    <h3>Shipping a new way for Fact Makers.</h3>
+    <h3>Shipping a new way from Fact Makers, to Act Fakers.</h3>
     <p>
-      It's not just about telling the truth or looking for whom to blame. We all
-      have an imperious desire to know how things have been done or accomplished
-      in our daily lives and the stuff we care about. And that's <strong
+      It's not just about revealing or demanding the truth, looking for whom to
+      blame. We all have an imperious desire to know how things have been done
+      or accomplished in our daily lives on the stuff we care about. And that's <strong
         >OK.</strong
-      > However, shouldn't we seek for a form of truth that truly makes our
-      reality more interesting and appealling? Isn't there a one-fits-all path
-      which could lead us to a world where our actions mark every and each one
-      of us completely onto the steps of History, but at the same time, gives us
-      the power of redeem ourselves through little actions and rewards, to the
-      point of even rewrite our personal story of life?
+      > However, shouldn't we seek a form of cooperation that truly makes our dialy
+      lives more interesting and appealling? Isn't there a one-size-fits-all approach
+      that could lead us to a world where our actions mark each one of us as flawed
+      as we are, and at the same time, gives us the power to redeem ourselves with
+      significant actions, to the point of even rewriting the lives of others? Can
+      we expect to encounter some kind of force that proves its worth over the selfish
+      and hollow figures that have ruled the content we consume, the products we
+      acquire, or even our most profound beliefs..?
     </p>
     <p>
-      Many centuries have passed where humanity has tried to fit facts in
-      refined cups of tea, hoping that good taste becomes their signature of
-      authenticity and trust. Well, that's only a part of the whole tale. We can
-      do better, and not only that: we can make <strong>people</strong> better.
+      Many centuries have passed since humanity attempted to encapsulate its
+      essence in delicated teacups, hoping that good taste and a false virtue
+      become their signature of authenticity and beauty, of public acceptance.
+      Well, that's only a part of the whole tale. But we can do better, and not
+      only that: we can satisfy all kinds of people to create <better
+        >better people</better
+      >.
     </p>
+    <p>
+      So, what is AletheIQ all about? it's more than just a mirror in wich light
+      reflects to capture the essence of our best ideas in the everyday struggle
+      against falsehood. It begins by acknowledging the true nature of our
+      desires from the heights of the <i>real web</i>, empowering souls and
+      subsequently enhancing our existence through customized and intimate
+      markets of the <strong>innermost</strong> assets. Those that will fulfill the
+      little holes in society with Proofs of Outerness: where the audiences will
+      help creators to provide us with the solutions we deeply need into the circles
+      of life we can actually feel and observe. And what finest source code to teach
+      us how, than the <strong>true idols</strong> among us.
+    </p>
+
+    <Footer />
   </body>
 </html>
